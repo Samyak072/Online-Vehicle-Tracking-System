@@ -1,10 +1,6 @@
 // backend/config/dbConfig.js
 
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
-
-// Load environment variables from .env file
-dotenv.config();
 
 // Database connection configuration
 const dbConfig = {
@@ -26,7 +22,5 @@ const connectDB = async () => {
 };
 
 module.exports = {
-    dbConfig,
     connectDB,
 };
-
