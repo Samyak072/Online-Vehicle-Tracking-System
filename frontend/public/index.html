@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Vehicle Tracking System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Online Vehicle Tracking System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#track-vehicle">Track Vehicle</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#route-history">Route History</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Online Vehicle Tracking System</h2>
+            <p>Your one-stop solution for tracking your vehicles in real-time.</p>
+        </section>
+
+        <section id="track-vehicle">
+            <h2>Track Vehicle</h2>
+            <form id="track-vehicle-form">
+                <label for="vehicle-id">Vehicle ID:</label>
+                <input type="text" id="vehicle-id" name="vehicle-id" required>
+                <button type="submit">Track</button>
+            </form>
+            <div id="tracking-result"></div>
+        </section>
+
+        <section id="alerts">
+            <h2>Alerts</h2>
+            <div id="alert-list"></div>
+        </section>
+
+        <section id="reports">
+            <h2>Reports</h2>
+            <button id="generate-report">Generate Report</button>
+            <div id="report-result"></div>
+        </section>
+
+        <section id="route-history">
+            <h2>Route History</h2>
+            <button id="view-route-history">View Route History</button>
+            <div id="route-history-result"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Vehicle Tracking System. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
 
